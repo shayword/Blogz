@@ -5,13 +5,73 @@
         <title>Blogz</title>
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/styles.css">
+        <style type='text/css'>
+            body {
+                font-family: sans-serif;
+                width: 1000px;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+            .error {
+                color: red;
+            }
+
+            label {
+                display: block;
+                font-size: 20px;
+            }
+
+            input[type=text] {
+                width: 400px;
+                font-size: 20px;
+                padding: 2px;
+            }
+
+            textarea {
+                width: 400px;
+                height: 200px;
+                font-size 17px;
+                font-family: Arial;
+            }
+
+            input[type=submit] {
+                font-size: 24px;
+            }
+
+            hr {
+                margin: 20px auto;
+            }
+
+            .blog + .blog {
+                margin-top: 20px;
+            }
+
+            .blog-title {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .blog-body {
+                margin: 0;
+                font-size: 17px;
+            }
+
+            bigly {
+                font-size: 80%;
+                font-style: italic;
+            }
+        </style>
     </head>
     <body>
         <nav>
             <ul>
-                <li><a href="/">home</a></li>
-                <li><a href="/blog">all posts</a></li>
-                <li><a href="/blog/newpost">new post</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">All Posts</a></li>
+                <li><a href="/blog/newpost">New Post</a></li>
+                <li>|</li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/logout">Logout</a></li>
             </ul>
         </nav>
         {% block content %}
